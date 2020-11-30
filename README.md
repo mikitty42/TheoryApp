@@ -82,7 +82,7 @@ Catalog design,Table_Definition,Screen transition diagram,,Wire frame
 * Order history detailed function
 * Advanced cart features
 
-To be used Gem
+## To be used Gem
 
 * carrierwave
 * mini_magick
