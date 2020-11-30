@@ -1,20 +1,20 @@
 # README
-——————————————————————————————————————
 
 TheoryApp
-——————————————————————————————————————
+
 ## 概要
-——————————————————————————————————————
 TheoryAppのアップデートバージョン。現在の機能にビデオ通話やチャット機能を追加しました。
 
 ## コンセプト
-——————————————————————————————————————
+
 Theoryのアプリ
+
 ## バージョン
-———————————————————————————————————————————
+
 Ruby 2.5.6 Rails 5.2.4
+
 ## 機能一覧
-———————————————————————————————————————————
+
 * ログイン機能
 * ユーザー登録機能
     * メールアドレス、名前、パスワードは必須
@@ -29,48 +29,47 @@ Ruby 2.5.6 Rails 5.2.4
 * カートの詳細機能
 
 ## カタログ設計
-———————————————————————————————————————————
+
 <http://qiita.com>
 
 ## テーブル定義
-———————————————————————————————————————————
 <http://qiita.com>
 
 ## 画面遷移図
-———————————————————————————————————————————
+
 <http://qiita.com>
 
 ## 画面ワーヤーフレーム
-———————————————————————————————————————————
+
 <http://qiita.com>
 
 ## 使用予定Gem
-———————————————————————————————————————————
+
 * carrierwave
 * mini_magick
 * devise
 
 ## English Ver
-———————————————————————————————————————————
+
 ## README
-———————————————————————————————————————————
+
 TheoryApp
-———————————————————————————————————————————
+
 ### Overview
-———————————————————————————————————————————
+
 Added video call and chat capabilities to the current app
 
 ## Concept
 Theory's APP
 
 ## Version
-———————————————————————————————————————————
+
 Ruby 2.5.6 Rails 5.2.4
 
 ## Functions list
-———————————————————————————————————————————
+
 Catalog design,Table_Definition,Screen transition diagram,,Wire frame
-———————————————————————————————————————————
+
 * Login function
 * User registration function
     * Email address, name and password required
@@ -85,7 +84,7 @@ Catalog design,Table_Definition,Screen transition diagram,,Wire frame
 * Advanced cart features
 
 To be used Gem
-———————————————————————————————————————————
+
 * carrierwave
 * mini_magick
 * devise
