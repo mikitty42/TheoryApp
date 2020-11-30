@@ -28,20 +28,16 @@ Ruby 2.5.6 Rails 5.2.4
 * 注文履歴詳細機能
 * カートの詳細機能
 
-## カタログ設計
+## カタログ設計、テーブル定義
 
-<http://qiita.com>
+<https://docs.google.com/spreadsheets/d/1qqWovGZYgOg300z--Z-mOAL3JfEfLFZsg62kRqB52wk/edit?pli=1#gid=0>
 
-## テーブル定義
-<http://qiita.com>
 
-## 画面遷移図
+## 画面遷移図、画面ワーヤーフレーム、ER図
 
-<http://qiita.com>
+<https://app.diagrams.net/?title=Copy%20of%20%E5%8D%92%E6%A5%AD%E8%AA%B2%E9%A1%8C%E8%A6%81%E4%BB%B6%E5%AE%9A%E7%BE%A9.drawio&client=1#G1CpXG7mjK0s790VWi7louIIYc5w25U2c_>
 
-## 画面ワーヤーフレーム
 
-<http://qiita.com>
 
 ## 使用予定Gem
 
