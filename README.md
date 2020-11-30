@@ -65,6 +65,9 @@ Ruby 2.5.6 Rails 5.2.4
 ## Functions list
 
 Catalog design,Table_Definition,Screen transition diagram,,Wire frame
+<https://docs.google.com/spreadsheets/d/1qqWovGZYgOg300z--Z-mOAL3JfEfLFZsg62kRqB52wk/edit?pli=1#gid=0>
+<https://app.diagrams.net/?title=Copy%20of%20%E5%8D%92%E6%A5%AD%E8%AA%B2%E9%A1%8C%E8%A6%81%E4%BB%B6%E5%AE%9A%E7%BE%A9.drawio&client=1#G1CpXG7mjK0s790VWi7louIIYc5w25U2c_>
+
 
 * Login function
 * User registration function
