@@ -27,6 +27,8 @@ Ruby 2.5.6 Rails 5.2.4
 * 注文情報作成機能
 * 注文履歴詳細機能
 * カートの詳細機能
+* ビデオ通話機能
+* メッセージ機能
 
 ## カタログ設計、テーブル定義
 
@@ -81,6 +83,8 @@ Catalog design,Table_Definition,Screen transition diagram,,Wire frame
 * Order information creation function
 * Order history detailed function
 * Advanced cart features
+* Video call function
+* Message function
 
 ## To be used Gem
 
