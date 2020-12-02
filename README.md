@@ -37,7 +37,7 @@ Ruby 2.5.6 Rails 5.2.4
 
 ## 画面遷移図、画面ワーヤーフレーム、ER図
 
-<https://app.diagrams.net/?title=Copy%20of%20%E5%8D%92%E6%A5%AD%E8%AA%B2%E9%A1%8C%E8%A6%81%E4%BB%B6%E5%AE%9A%E7%BE%A9.drawio&client=1#G1CpXG7mjK0s790VWi7louIIYc5w25U2c_>
+<https://drive.google.com/file/d/1IFNTx2hww11TijHONsi5Hkr39i5eHMgj/view?usp=sharing>
 
 
 
@@ -68,7 +68,7 @@ Ruby 2.5.6 Rails 5.2.4
 
 Catalog design,Table_Definition,Screen transition diagram,,Wire frame
 <https://docs.google.com/spreadsheets/d/1qqWovGZYgOg300z--Z-mOAL3JfEfLFZsg62kRqB52wk/edit?pli=1#gid=0>
-<https://app.diagrams.net/?title=Copy%20of%20%E5%8D%92%E6%A5%AD%E8%AA%B2%E9%A1%8C%E8%A6%81%E4%BB%B6%E5%AE%9A%E7%BE%A9.drawio&client=1#G1CpXG7mjK0s790VWi7louIIYc5w25U2c_>
+<https://drive.google.com/file/d/1IFNTx2hww11TijHONsi5Hkr39i5eHMgj/view?usp=sharing>
 
 
 * Login function
