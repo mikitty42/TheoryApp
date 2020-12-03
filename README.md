@@ -35,11 +35,14 @@ Ruby 2.5.6 Rails 5.2.4
 <https://docs.google.com/spreadsheets/d/1qqWovGZYgOg300z--Z-mOAL3JfEfLFZsg62kRqB52wk/edit?pli=1#gid=0>
 
 
-## 画面遷移図、画面ワーヤーフレーム、ER図
-
+## ER図
 <https://drive.google.com/file/d/1IFNTx2hww11TijHONsi5Hkr39i5eHMgj/view?usp=sharing>
 
+## 画面遷移図
+<https://drive.google.com/file/d/19-rkXCLVHETXohR-WZfHOTtEbAP1ek6E/view?usp=sharing>
 
+## 画面ワーヤーフレーム
+<https://drive.google.com/file/d/12e4-Nf-7XWsGhF25FBu-cQNNxhI3fiOz/view?usp=sharing>
 
 ## 使用予定Gem
 
