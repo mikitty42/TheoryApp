@@ -36,10 +36,10 @@ Ruby 2.5.6 Rails 5.2.4
 
 
 ## ER図
-<https://drive.google.com/file/d/1L5uv_WseViduZVlbTmVB4pIwLdnAXprv/view?usp=sharing>
+<https://drive.google.com/file/d/1NxhBlzblCNVrUad6iJoZ4N4DbwkcQwT2/view?usp=sharing>
 
 ## 画面遷移図
-<https://drive.google.com/file/d/1vkn4b7G5EKKtUxB7Y6rY4Of0R0GUyrm5/view?usp=sharing>
+<https://drive.google.com/file/d/1NxhBlzblCNVrUad6iJoZ4N4DbwkcQwT2/view?usp=sharing>
 
 ## 画面ワーヤーフレーム
 <https://drive.google.com/file/d/12e4-Nf-7XWsGhF25FBu-cQNNxhI3fiOz/view?usp=sharing>
