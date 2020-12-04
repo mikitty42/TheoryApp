@@ -3,7 +3,7 @@
 TheoryApp
 
 ## 概要
-Theoryのアプリ。ECサイト機能にビデオ通話機能、チャット機能を追加しました。
+ファッションブランドTheoryのアプリ。ECサイト機能にビデオ通話機能、チャット機能を追加しました。
 
 ## コンセプト
 
@@ -36,10 +36,10 @@ Ruby 2.5.6 Rails 5.2.4
 
 
 ## ER図
-<https://drive.google.com/file/d/14tuFEQ9CRHgZZiVxYPXhqe8Vul0ShDiy/view?usp=sharing>
+<https://drive.google.com/file/d/1L5uv_WseViduZVlbTmVB4pIwLdnAXprv/view?usp=sharing>
 
 ## 画面遷移図
-<https://drive.google.com/file/d/19-rkXCLVHETXohR-WZfHOTtEbAP1ek6E/view?usp=sharing>
+<https://drive.google.com/file/d/1vkn4b7G5EKKtUxB7Y6rY4Of0R0GUyrm5/view?usp=sharing>
 
 ## 画面ワーヤーフレーム
 <https://drive.google.com/file/d/12e4-Nf-7XWsGhF25FBu-cQNNxhI3fiOz/view?usp=sharing>
@@ -57,7 +57,7 @@ TheoryApp
 
 ### Overview
 
-Added video call and chat capabilities to the current app
+Theory app. Video call function and chat function have been added to the EC site function
 
 ## Concept
 Theory's APP
