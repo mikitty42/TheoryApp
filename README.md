@@ -70,8 +70,8 @@ Ruby 2.5.6 Rails 5.2.4
 
 Catalog design,Table_Definition,Screen transition diagram,,Wire frame
 <https://docs.google.com/spreadsheets/d/1qqWovGZYgOg300z--Z-mOAL3JfEfLFZsg62kRqB52wk/edit?pli=1#gid=0>
-<https://drive.google.com/file/d/14tuFEQ9CRHgZZiVxYPXhqe8Vul0ShDiy/view?usp=sharing>
-<https://drive.google.com/file/d/19-rkXCLVHETXohR-WZfHOTtEbAP1ek6E/view?usp=sharing>
+<https://drive.google.com/file/d/1L5uv_WseViduZVlbTmVB4pIwLdnAXprv/view?usp=sharing>
+<https://drive.google.com/file/d/1NxhBlzblCNVrUad6iJoZ4N4DbwkcQwT2/view?usp=sharing>
 <https://drive.google.com/file/d/12e4-Nf-7XWsGhF25FBu-cQNNxhI3fiOz/view?usp=sharing>
 
 
