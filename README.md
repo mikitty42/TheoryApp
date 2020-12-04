@@ -36,7 +36,7 @@ Ruby 2.5.6 Rails 5.2.4
 
 
 ## ER図
-<https://drive.google.com/file/d/1NxhBlzblCNVrUad6iJoZ4N4DbwkcQwT2/view?usp=sharing>
+<https://drive.google.com/file/d/1L5uv_WseViduZVlbTmVB4pIwLdnAXprv/view?usp=sharing>
 
 ## 画面遷移図
 <https://drive.google.com/file/d/1NxhBlzblCNVrUad6iJoZ4N4DbwkcQwT2/view?usp=sharing>
