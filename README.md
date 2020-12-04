@@ -48,7 +48,6 @@ Ruby 2.5.6 Rails 5.2.4
 
 * carrierwave
 * mini_magick
-* devise
 
 ## English Ver
 
@@ -95,4 +94,3 @@ Catalog design,Table_Definition,Screen transition diagram,,Wire frame
 
 * carrierwave
 * mini_magick
-* devise
