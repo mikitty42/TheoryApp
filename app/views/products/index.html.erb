@@ -1,0 +1,25 @@
+<h2>商品一覧</h2>
+
+<table class='table table-stripe'>
+  <thead>
+    <tr>
+      <th>商品画像</th>
+      <th>商品名</th>
+      <th>商品価格</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @products.each do |product| %>
+     <tr>
+       <td text-align:center;><img height='80' src='<%= h product.picture %>'/></td>
+       <td><%= link_to product.name,product %></td>
+       <td><%= product.price %>円</td>
+       <% if current_user.admin? %>
+          <td><%= link_to "編集", edit_product_path(product),class: 'btn btn-xs btn-primary' %></td>
+          <td><%= link_to "削除",product,method: :delete,class: 'btn btn-xs btn-danger',data: { confirm: '商品を削除してよろしいですか？'}</td>
+        <% end %>
+     </tr>
+  </tbody>
+</table>
