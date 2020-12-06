@@ -3,7 +3,7 @@
 TheoryApp
 
 ## 概要
-ファッションブランドTheoryのアプリ。
+
 ファッションブランドTheoryのアプリ。ECサイト機能にビデオ通話機能、チャット機能を追加しました。
 
 ## コンセプト
@@ -46,7 +46,7 @@ Ruby 2.5.6 Rails 5.2.4
 ## 画面遷移図
 <https://drive.google.com/file/d/1NxhBlzblCNVrUad6iJoZ4N4DbwkcQwT2/view?usp=sharing>
 
-## 画面ワーヤーフレーム
+## 画面ワイヤーフレーム
 <https://drive.google.com/file/d/12e4-Nf-7XWsGhF25FBu-cQNNxhI3fiOz/view?usp=sharing>
 
 ## 使用予定Gem

@@ -1,0 +1,35 @@
+<h2>カートの中身</h2>
+
+<% if @cart_items.blank? %>
+  <h2>カートの中身は空です</h2>
+<% else %>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>商品画像</th>
+      <th>商品名</th>
+      <th>商品価格</th>
+      <th>個数</th>
+      <th>カートから削除</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @cart_items.each do |cart_item| %>
+      <tr>
+        <% pic = Product.find(cart_item.product.id) %>
+        <td><img height="80" src="<%= h pic.picture %>"/></td>
+        <td><%= cart_item.product.name %></td>
+        <td><%= cart_item.product.price %>円</td>
+        <td><%= cart_item.quantity %>個</td>
+        <td><%= link_to "削除",cart_item,method: :delete,class: 'btn btn-xs btn-danger',data: {confirm: 'カートから削除してよろしいですか？'}</td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<% end %>
+
+<h2>合計金額: <%= @total_price %>円</h2>
+
+<%= link_to '注文する',new-order_path, method: :get,class: 'btn btn-primary' %>
