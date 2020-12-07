@@ -1,5 +1,6 @@
 class ProductsController < ApplicationController
   before_action :ensure_correct_user, { only: [:new,:create,:edit,:destroy]}
+  before_action :set_product, only: [:show,:edit,:update]
 
   def index
     @products =  Product.all
@@ -51,7 +52,7 @@ class ProductsController < ApplicationController
   private
 
   def product_params
-    params.require(:product).permit(:name,:price,:title,:memo,:author,:picture)
+    params.require(:product).permit(:name,:price,:picture)
   end
 
   def set_product

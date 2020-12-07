@@ -1,10 +1,10 @@
 <h2><%= @product.name %></h2>
-<%= form_with(@product,url: add_item_path(product_id: @product.id)) do |f| %>
+<%= form_with(model: @product,url: add_item_path(product_id: @product.id)) do |f| %>
   <table class='table table-striped'>
     <thead>
       <tr>
         <th>商品画像</th>
-        <th>商品登録</th>
+        <th>商品価格</th>
         <th>個数</th>
       </tr>
     </thead>

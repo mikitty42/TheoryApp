@@ -1,7 +1,7 @@
 <h2>カートの中身</h2>
 
 <% if @cart_items.blank? %>
-  <h2>カートの中身は空です</h2>
+  <h2>カートは空です</h2>
 <% else %>
 
 <table class="table table-striped">
@@ -22,7 +22,7 @@
         <td><%= cart_item.product.name %></td>
         <td><%= cart_item.product.price %>円</td>
         <td><%= cart_item.quantity %>個</td>
-        <td><%= link_to "削除",cart_item,method: :delete,class: 'btn btn-xs btn-danger',data: {confirm: 'カートから削除してよろしいですか？'}</td>
+        <td><%= link_to "削除",cart_item,method: :delete,class: 'btn btn-xs btn-danger',data: {confirm: 'カートから削除してよろしいですか？'} %></td>
       </tr>
     <% end %>
   </tbody>
@@ -32,4 +32,4 @@
 
 <h2>合計金額: <%= @total_price %>円</h2>
 
-<%= link_to '注文する',new-order_path, method: :get,class: 'btn btn-primary' %>
+<%= link_to '注文する',new_order_path, method: :get,class: 'btn btn-primary' %>

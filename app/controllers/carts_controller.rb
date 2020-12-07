@@ -1,17 +1,17 @@
 class CartsController < ApplicationController
-  before_action :setup_cart_item!, only: [:add_item,:update_item, :show]
+  before_action :setup_cart_item!, only: [:add_item, :update_item, :show]
 
   def show
-    @cart_items = CartItem.where(cart_id: current_cart.id)
+    @cart_items = CartItem.where(cart_id:current_cart.id)
     @total_price = @cart_items.calc_total_price(@cart_items)
   end
 
   def add_item
-    if Cartitem.find_by(product_id: params[:product_id], cart_id: current_cart.id).blank?
-      @cart_item = current_cart_items.create(product_id: params[:product_id])
+    if CartItem.find_by(product_id: params[:product_id], cart_id: current_cart.id).blank?
+      @cart_item = current_cart.cart_items.create(product_id: params[:product_id])
     end
 
-    @cart_item.quantity += params[:product][:quantity].ti_i
+    @cart_item.quantity += params[:product][:quantity].to_i
     @cart_item.save!
     redirect_to current_cart
   end

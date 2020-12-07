@@ -1,6 +1,6 @@
 <h2>商品一覧</h2>
 
-<table class='table table-stripe'>
+<table class='table table-striped'>
   <thead>
     <tr>
       <th>商品画像</th>
@@ -18,8 +18,9 @@
        <td><%= product.price %>円</td>
        <% if current_user.admin? %>
           <td><%= link_to "編集", edit_product_path(product),class: 'btn btn-xs btn-primary' %></td>
-          <td><%= link_to "削除",product,method: :delete,class: 'btn btn-xs btn-danger',data: { confirm: '商品を削除してよろしいですか？'}</td>
-        <% end %>
+          <td><%= link_to "削除", product, method: :delete, class: 'btn btn-xs btn-danger', data: { confirm: '商品を削除してよろしいですか？'}%></td>
+       <% end %>
      </tr>
+   <% end %>
   </tbody>
 </table>

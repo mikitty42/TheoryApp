@@ -1,0 +1,10 @@
+Thank you <%= @user.name %>
+
+<% @cart_items.each do |cart_item| %>
+    Product Name:<%= cart_item.product.name %>
+    Product Price:<%= cart_item.product.price %>
+    Product Quantity:<%= cart_item.quantity %>
+<% end %>
+
+
+Total Price:<%= @total_price %>
