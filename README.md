@@ -26,10 +26,8 @@ Ruby 2.5.6 Rails 5.2.4
 * 商品登録、削除、編集機能
     * 商品登録、編集、削除機能は管理者のみ実行可能
 * 商品一覧表示機能
-* 商品注文履歴一覧機能
-* 注文情報作成機能
-* 注文履歴詳細機能
-* カートの詳細機能
+* お気に入り機能
+* カート機能
 *　以下後日実装
     * 最新ニュース配信機能、LOOK、Shop Blog、Staff Snap、検索機能、ポイント機能
 
@@ -89,8 +87,7 @@ Catalog design,Table_Definition,Screen transition diagram,,Wire frame
     * Product registration, editing, and deletion functions can only be executed by the administrator
 * Product list display function
 * Product order history list function
-* Order information creation function
-* Order history detailed function
+* Favorite function
 * Advanced cart features
 * Video call function
 * Message function
