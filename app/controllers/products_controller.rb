@@ -7,6 +7,7 @@ class ProductsController < ApplicationController
   end
 
   def show
+    @favorite = current_user.favorites.find_by(product_id: @product.id)
   end
 
   def new

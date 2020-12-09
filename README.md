@@ -43,7 +43,7 @@ Ruby 2.5.6 Rails 5.2.4
 <https://drive.google.com/file/d/1L5uv_WseViduZVlbTmVB4pIwLdnAXprv/view?usp=sharing>
 
 ## 画面遷移図
-<https://drive.google.com/file/d/1NxhBlzblCNVrUad6iJoZ4N4DbwkcQwT2/view?usp=sharing>
+<https://drive.google.com/file/d/1pPj-y2RaxZkfSV_4JtTdksIrXCC6ylNS/view?usp=sharing>
 
 ## 画面ワイヤーフレーム
 <https://drive.google.com/file/d/12e4-Nf-7XWsGhF25FBu-cQNNxhI3fiOz/view?usp=sharing>
@@ -75,7 +75,7 @@ Ruby 2.5.6 Rails 5.2.4
 Catalog design,Table_Definition,Screen transition diagram,,Wire frame
 <https://docs.google.com/spreadsheets/d/1qqWovGZYgOg300z--Z-mOAL3JfEfLFZsg62kRqB52wk/edit?pli=1#gid=0>
 <https://drive.google.com/file/d/1L5uv_WseViduZVlbTmVB4pIwLdnAXprv/view?usp=sharing>
-<https://drive.google.com/file/d/1NxhBlzblCNVrUad6iJoZ4N4DbwkcQwT2/view?usp=sharing>
+<https://drive.google.com/file/d/1pPj-y2RaxZkfSV_4JtTdksIrXCC6ylNS/view?usp=sharing>
 <https://drive.google.com/file/d/12e4-Nf-7XWsGhF25FBu-cQNNxhI3fiOz/view?usp=sharing>
 
 

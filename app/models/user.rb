@@ -1,6 +1,6 @@
 class User < ApplicationRecord
   has_one :cart
-  has_many :orders
+  has_many :favorites
   has_secure_password
   validates :password,presence: true,length: { maximum: 6}
   validates :name,presence: true,length: { maximum: 30}
