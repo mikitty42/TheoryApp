@@ -1,0 +1,18 @@
+<table>
+  <caption>お気に入り一覧</caption>
+  <thead>
+    <tr>
+      <th>商品画像</th>
+      <th>商品名</th>
+      <th>商品価格</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @favorites.each do |favorite| %>
+    <tr>
+      <td><%= favorite.product.name %></td>
+      <td><%= favorite.product.price %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>

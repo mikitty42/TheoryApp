@@ -1,9 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
+  body: MyText
+  conversation: one
   user: one
-  product: one
+  read: false
 
 two:
+  body: MyText
+  conversation: two
   user: two
-  product: two
+  read: false

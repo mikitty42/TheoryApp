@@ -1,11 +1,15 @@
 Rails.application.routes.draw do
-  root to: 'products#index'
-  resources :users, only: [:new,:create,:show]
+  root to: 'users#new'
+  resources :users, only: [:new,:create,:show,:index]
   resources :sessions,only: [:new,:create,:destroy]
-  resources :products
   resources :carts
   resources :cart_items
-  resources :favorites, only: [:create,:destroy,:index]
+  resources :products
+  resources :favorites, only: [:index,:create,:destroy]
+  resources :conversations do
+    resources :messages
+  end
+
 
   patch '/add_item' => 'carts#add_item'
   post '/update_item' => 'carts#update_item'

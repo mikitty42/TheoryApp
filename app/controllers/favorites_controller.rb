@@ -1,10 +1,12 @@
 class FavoritesController < ApplicationController
 
-  
+  def index
+    @favorites = current_user.favorite_products
+  end
 
   def create
     favorite = current_user.favorites.create(product_id: params[:product_id])
-    redirect_to favorites_path,notice: 'お気に入り登録しました!'
+    redirect_to products_url,notice: 'お気に入りに追加しました'
   end
 
   def destroy

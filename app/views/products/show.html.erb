@@ -14,15 +14,13 @@
         <td><%= @product.price %>円</td>
         <td><%= f.number_field :quantity,value: 1,class: 'form-control',min: 1 %></td>
         <td><%= f.hidden_field :product_id,value: @product.id %></td>
-        <unless @product_user_id == current_user.id %>
-          <% if @favorite.present? %>
-            <%= link_to 'お気に入り解除する',favorite_path(id: @favorite.id),method: :delete,class: 'btn btn-danger' %>
-          <% else %>
-            <%= link_to 'お気に入りする',favorite_path(product_id: @product.id), method: :post, class: 'btn btn-primary' %>
-          <% end %>
-        <% end %>
         <td><%= f.submit 'カートに入れる',class: 'btn btn-success' %></td>
       </tr>
     </tbody>
   </table>
+<% end %>
+<% if @favorite.present? %>
+  <%= link_to 'お気に入りを解除する',favorite_path(id: @favorite.id), method: :delete,class: 'btn btn-danger' %>
+<% else %>
+  <%= link_to 'お気に入りする',favorites_path(product_id: @product.id),method: :post,class: 'btn btn-primary' %>
 <% end %>

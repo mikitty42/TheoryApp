@@ -1,13 +1,8 @@
 class ProductsController < ApplicationController
   before_action :ensure_correct_user, { only: [:new,:create,:edit,:destroy]}
-  before_action :set_product, only: [:show,:edit,:update]
 
   def index
     @products =  Product.all
-  end
-
-  def show
-    @favorite = current_user.favorites.find_by(product_id: @product.id)
   end
 
   def new
@@ -16,6 +11,7 @@ class ProductsController < ApplicationController
 
   def create
     @product = Product.new(product_params)
+    @product.user_id = current_user.id
     if @product.save
       flash[:success] = "商品を登録しました"
       redirect_to root_url
@@ -24,16 +20,23 @@ class ProductsController < ApplicationController
     end
   end
 
+  def show
+    @product = Product.find(params[:id])
+    @favorite = current_user.favorites.find_by(product_id: @product.id)
+  end
+
   def edit
+    @product = Product.find(params[:id])
   end
 
   def update
-    if @product.update_attributes(product_params)
-      flash[:success] = "更新しました"
-      redirect_to @product
-    else
-      render :edit
-    end
+    @product = Product.find(params[:id])
+      if @product.update_attributes(product_params)
+        flash[:success] = "更新しました"
+        redirect_to @product
+      else
+        render :edit
+      end
   end
 
   def ensure_correct_user
@@ -50,13 +53,14 @@ class ProductsController < ApplicationController
     redirect_to products_path
   end
 
+  def favorites
+    @products = current_user.favorite_products.includes(:user).recent
+  end
+
   private
 
   def product_params
     params.require(:product).permit(:name,:price,:picture)
   end
 
-  def set_product
-    @product = Product.find(params[:id])
-  end
 end
