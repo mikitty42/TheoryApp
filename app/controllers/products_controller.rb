@@ -2,7 +2,11 @@ class ProductsController < ApplicationController
   before_action :ensure_correct_user, { only: [:new,:create,:edit,:destroy]}
 
   def index
-    @products =  Product.all
+    if params[:name].present?
+      @products = current_user.products.get_by_name(params[:name])
+    else
+      @products = Product.all
+    end
   end
 
   def new

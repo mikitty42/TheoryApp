@@ -1,5 +1,11 @@
 <h2>商品一覧</h2>
-
+<div>
+  <%= form_with(url:products_path,local: true,method: :get) do |form| %>
+    <%= form.label :name,'検索' %>
+    <%= form.text_field :name,value: params[:name] %>
+    <%= form.submit 'Search', name: nil %>
+  <% end %>
+</div>
 <table class='table table-striped'>
   <thead>
     <tr>
