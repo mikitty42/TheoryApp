@@ -3,11 +3,9 @@ class ProductsController < ApplicationController
 
   def index
     @products = Product.all
-    if params[:search].present?
       if params[:name].present?
-        @products = @products.get_by_name(params[:name]) 
+        @products = Product.get_by_name(params[:name]) 
       end
-    end
   end
 
   def new

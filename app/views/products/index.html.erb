@@ -3,8 +3,7 @@
   <%= form_with(url:products_path,local: true,method: :get) do |form| %>
     <%= form.label :name,'検索' %>
     <%= form.text_field :name,value: params[:name] %>
-    <%= form.hidden_field :search, value: 'true' %>
-    <%= form.submit 'Search', name: nil %>
+    <%= form.submit 'Search' %>
   <% end %>
 </div>
 <table class='table table-striped'>

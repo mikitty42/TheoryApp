@@ -8,7 +8,7 @@ class CartsController < ApplicationController
 
   def add_item
     if CartItem.find_by(product_id: params[:product_id], cart_id: current_cart.id).blank?
-      
+
       @cart_item = current_cart.cart_items.create(product_id: params[:product_id])
     end
 

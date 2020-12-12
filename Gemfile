@@ -25,7 +25,9 @@ gem 'carrierwave'
 gem 'mini_magick'
 
 group :development, :test do
-
+  gem 'pry-rails'
+  gem 'better_errors'
+  gem 'binding_of_caller'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
 
@@ -41,10 +43,6 @@ group :test do
 
   gem 'capybara', '>= 2.15'
   gem 'selenium-webdriver'
-  gem 'pry-rails'
-  gem 'better_errors'
-  gem 'binding_of_caller'
-
   gem 'chromedriver-helper'
 end
 
