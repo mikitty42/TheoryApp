@@ -2,10 +2,11 @@ class ProductsController < ApplicationController
   before_action :ensure_correct_user, { only: [:new,:create,:edit,:destroy]}
 
   def index
-    if params[:name].present?
-      @products = current_user.products.get_by_name(params[:name])
-    else
-      @products = Product.all
+    @products = Product.all
+    if params[:search].present?
+      if params[:name].present?
+        @products = @products.get_by_name(params[:name]) 
+      end
     end
   end
 
@@ -57,14 +58,9 @@ class ProductsController < ApplicationController
     redirect_to products_path
   end
 
-  def favorites
-    @products = current_user.favorite_products.includes(:user).recent
-  end
-
   private
 
   def product_params
     params.require(:product).permit(:name,:price,:picture)
   end
-
 end

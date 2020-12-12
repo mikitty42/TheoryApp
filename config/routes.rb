@@ -1,11 +1,13 @@
 Rails.application.routes.draw do
   #get 'rooms/show'
   root to: 'users#new'
-  resources :users
+  resources :users 
   resources :sessions,only: [:new,:create,:destroy]
   resources :carts
   resources :cart_items
-  resources :products
+  resources :products do
+    get :search, on: :collection
+  end
   resources :favorites, only: [:index,:create,:destroy]
   resources :conversations do
     resources :messages

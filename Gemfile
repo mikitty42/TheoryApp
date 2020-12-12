@@ -41,6 +41,9 @@ group :test do
 
   gem 'capybara', '>= 2.15'
   gem 'selenium-webdriver'
+  gem 'pry-rails'
+  gem 'better_errors'
+  gem 'binding_of_caller'
 
   gem 'chromedriver-helper'
 end

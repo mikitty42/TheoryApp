@@ -1,3 +1,2 @@
-<h2><p>お名前:<%= @user.name %></p></h2>
-<h2><p>メールアドレス:<%= @user.email %></p></h2>
+<h2><%= @user.name %></h2>
 <%= link_to '会員情報の変更',edit_user_path(current_user.id),class: 'btn btn-default' %>

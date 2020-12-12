@@ -3,6 +3,7 @@
   <%= form_with(url:products_path,local: true,method: :get) do |form| %>
     <%= form.label :name,'検索' %>
     <%= form.text_field :name,value: params[:name] %>
+    <%= form.hidden_field :search, value: 'true' %>
     <%= form.submit 'Search', name: nil %>
   <% end %>
 </div>
@@ -12,8 +13,6 @@
       <th>商品画像</th>
       <th>商品名</th>
       <th>商品価格</th>
-      <th></th>
-      <th></th>
     </tr>
   </thead>
   <tbody>
