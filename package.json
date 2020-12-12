@@ -2,7 +2,6 @@
   "name": "TheoryApp",
   "private": true,
   "dependencies": {
-    "@rails/webpacker": "5.1.1",
     "bootstrap": "3",
     "jquery": "^3.5.1",
     "vue": "^2.6.12",
@@ -10,7 +9,8 @@
     "vue-template-compiler": "^2.6.12"
   },
   "devDependencies": {
-    "webpack-dev-server": "^3.11.0"
+    "@webpack-cli/serve": "^1.1.0",
+    "webpack-dev-server": "^2.11.1"
   },
   "babel": {
     "presets": [
