@@ -47,7 +47,7 @@ ActiveRecord::Schema.define(version: 2020_12_13_115803) do
   end
 
   create_table "messages", force: :cascade do |t|
-    t.text "body\u2028"
+    t.text "body"
     t.bigint "conversation_id"
     t.bigint "user_id"
     t.boolean "read", default: false
