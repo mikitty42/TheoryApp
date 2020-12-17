@@ -24,4 +24,10 @@ module SessionsHelper
   def current_user?(user)
     user == current_user
   end
+
+  def not_logged_in
+    unless logged_in?
+      redirect_to new_session_path
+    end
+  end
 end

@@ -1,10 +1,11 @@
 class ProductsController < ApplicationController
   before_action :ensure_correct_user, { only: [:new,:create,:edit,:destroy]}
+  before_action :not_logged_in
 
   def index
-    @products = Product.all
+    @products = Product.all.page(params[:page]).per(10)
       if params[:name].present?
-        @products = Product.get_by_name(params[:name]) 
+        @products = Product.get_by_name(params[:name]).page(params[:page]).per(10)
       end
   end
 

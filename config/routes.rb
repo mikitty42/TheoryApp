@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  #get 'rooms/show'
-  root to: 'users#new'
-  resources :users 
+  
+  root to: 'products#index'
+  resources :users
   resources :sessions,only: [:new,:create,:destroy]
   resources :carts
   resources :cart_items
