@@ -61,11 +61,12 @@ RSpec.describe 'Product管理機能', type: :system do
     before do
       @user = FactoryBot.create(:user)
       user_login
+      product = create(:product)
     end
     context '一覧画面に遷移した場合' do
       it '作成済みのProduct一覧が表示される' do
         visit products_path
-        expect(page).to have_content 'task2'
+        expect(post).to be_valid
       end
     end
   end
@@ -74,9 +75,53 @@ RSpec.describe 'Product管理機能', type: :system do
        it '該当Productの内容が表示される' do
 
          visit task_path(task.id)
-         expect(page).to have_content 'task2'
-         expect(page).to have_content 'content2'
+         expect(page).to have_content 'test_title'
+         expect(page).to have_content '10000'
+         expect(page).to have_content ''
        end
      end
   end
+  describe '' do
+     context '任意のProduct詳細画面に遷移した場合' do
+       it 'お気に入り出来る' do
+
+         visit task_path(task.id)
+         expect(page).to have_content 'test_title'
+         expect(page).to have_content '10000'
+         expect(page).to have_content ''
+       end
+     end
+  end
+  describe '詳細表示機能' do
+     context '任意のProduct詳細画面に遷移した場合' do
+       it 'カートの入れる事ができる' do
+
+         visit task_path(task.id)
+         expect(page).to have_content 'test_title'
+         expect(page).to have_content '10000'
+         expect(page).to have_content ''
+       end
+     end
+  end
+  describe 'カート詳細機能' do
+     context 'カートに入れるボタンを押すと' do
+       it 'カート詳細画面に推移する' do
+
+         visit task_path(task.id)
+         expect(page).to have_content 'test_title'
+         expect(page).to have_content '10000'
+         expect(page).to have_content ''
+       end
+     end
+  end
+
+     context 'カート詳細画面で削除ボタンを押すと' do
+       it 'カートから削除される' do
+
+         visit task_path(task.id)
+         expect(page).to have_content 'test_title'
+         expect(page).to have_content '10000'
+         expect(page).to have_content ''
+       end
+     end
 end
