@@ -102,6 +102,7 @@ GEM
     coffee-script-source (1.12.2)
     concurrent-ruby (1.1.7)
     crass (1.0.6)
+    database_cleaner (1.8.5)
     debug_inspector (0.0.3)
     diff-lcs (1.4.4)
     dotenv (2.7.6)
@@ -332,6 +333,7 @@ DEPENDENCIES
   capybara (>= 2.15)
   carrierwave
   coffee-rails (~> 4.2)
+  database_cleaner
   dotenv-rails
   factory_bot_rails
   fog-aws
