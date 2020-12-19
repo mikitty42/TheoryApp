@@ -25,6 +25,7 @@ Ruby 2.5.6 Rails 5.2.4
 * 以下ECサイト機能
 * 商品登録、削除、編集機能
     * 商品登録、編集、削除機能は管理者のみ実行可能
+*  あいまい検索機能
 * 商品一覧表示機能
 * お気に入り機能
 * カート機能
@@ -89,6 +90,7 @@ Catalog design,Table_Definition,Screen transition diagram,,Wire frame
 * Product list display function
 * Product order history list function
 * Favorite function
+* Fuzzy search function
 * Advanced cart features
 * Video call function
 * Message function
