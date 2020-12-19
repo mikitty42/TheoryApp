@@ -100,15 +100,4 @@ RSpec.describe 'Product管理機能', type: :system do
        end
      end
   end
-     context 'カート詳細画面で削除ボタンを押すと' do
-       it 'カートから削除される' do
-        #product = FactoryBot.create(:product,name: 'test_title2',price: '15000',picture:"app/assets/images/test.jpg")
-         visit product_path(@product.id)
-         click_button 'カートに入れる'
-         click_link '削除'
-         expect(page.driver.browser.switch_to.alert.text).to eq "カートから削除してよろしいですか？"
-         page.driver.browser.switch_to.alert.dismiss
-         #expect(page).to have_content 'カートは空です'
-       end
-     end
 end
