@@ -63,4 +63,5 @@ gem 'rinku'
 gem 'kaminari'
 gem 'fog-aws'
 gem 'dotenv-rails'
+gem 'faker'
 #gem 'webpacker', github: "rails/webpacker"

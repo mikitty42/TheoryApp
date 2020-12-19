@@ -1,0 +1,18 @@
+ja:
+  activerecord:
+    models:
+      product: 商品
+      user: ユーザー
+    attributes:
+      product:
+        name: 商品名
+        price: 金額
+        picture: 画像
+      user:
+        title: タイトル
+        name: 名前
+        email: メールアドレス
+        current_password: 現在のパスワード
+        password: パスワード
+        password_confirmation: 確認用パスワード
+        remember_me: ログインを記憶
