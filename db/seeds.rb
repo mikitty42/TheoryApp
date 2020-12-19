@@ -4,7 +4,7 @@
              #password_confirmation: "111111",
              #admin: true)
 #Cart.create!(user_id: "1")
-30.times do |n|
+100.times do |n|
   name = Faker::Games::Pokemon.name
   email = Faker::Internet.email
   password = "password"
