@@ -26,7 +26,7 @@ RSpec.describe 'Product管理機能', type: :system do
         admin_user_login
       end
     context 'Productを新規作成した場合' do
-      it '作成したタスクが表示される' do
+      it '作成したProductが表示される' do
 
         click_link 'Account'
         click_link 'Products Create'
