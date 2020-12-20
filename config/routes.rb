@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  
-  root to: 'products#index'
+
+  root to: 'users#new'
   resources :users
   resources :sessions,only: [:new,:create,:destroy]
   resources :carts
