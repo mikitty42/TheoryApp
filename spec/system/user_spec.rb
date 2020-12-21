@@ -27,7 +27,7 @@ RSpec.describe 'ユーザ登録・ログイン・ログアウト機能', type: :
         expect(page).to have_content 'sample'
       end
       it 'ログインしていない時はログイン画面に飛ぶテスト' do
-        visit root_path
+        visit products_path
         expect(current_path).to eq new_session_path
       end
     end
@@ -56,7 +56,7 @@ RSpec.describe 'ユーザ登録・ログイン・ログアウト機能', type: :
       it 'ログアウトができること' do
         click_link 'Account'
         click_link 'Log out'
-        expect(current_path).to eq new_session_path
+        expect(current_path).to eq new_user_path
       end
     end
   end
