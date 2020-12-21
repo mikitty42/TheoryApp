@@ -18,7 +18,7 @@ class ProductsController < ApplicationController
     @product.user_id = current_user.id
     if @product.save
       flash[:success] = "商品を登録しました"
-      redirect_to root_url
+      redirect_to products_path
     else
       render :new
     end
