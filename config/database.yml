@@ -85,3 +85,4 @@ production:
   database: TheoryApp_production
   username: TheoryApp
   password: <%= ENV['THEORYAPP_DATABASE_PASSWORD'] %>
+  
