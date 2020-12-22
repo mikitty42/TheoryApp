@@ -13,9 +13,6 @@
       <td text-align:center;><img height='80' src='<%= h favorite.picture %>'/></td>
       <td><%= favorite.name %></td>
       <td><%= favorite.price %>円</td>
-      <% if favorite.present? %>
-      <td><%= link_to 'お気に入りを解除する',favorite_path(id: favorite.id), method: :delete,class: 'btn btn-default' %></td>
-      <% end %>
     </tr>
     <% end %>
   </tbody>
