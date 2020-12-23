@@ -4,7 +4,7 @@ TheoryApp
 
 ## 概要
 
-ファッションブランドTheoryのアプリ。ECサイト機能にビデオ通話機能、チャット機能を追加しました。
+ファッションブランドTheoryのアプリ。ECサイト機能にビデオ通話機能(メッセージでURLを送る形式)、チャット機能を追加しました。
 
 ## コンセプト
 
@@ -62,7 +62,8 @@ TheoryApp
 
 ### Overview
 
-Theory app. Video call function and chat function have been added to the EC site function
+Theory app.
+Video call function (format to send URL by message) and chat function have been added to the EC site function.
 
 ## Concept
 Theory's APP
