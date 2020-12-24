@@ -1,6 +1,8 @@
 class ProductsController < ApplicationController
   before_action :ensure_correct_user, { only: [:new,:create,:edit,:destroy]}
   before_action :not_logged_in
+  before_action :exist_product?, only: [:show, :edit, :update]
+
 
   def index
     @products = Product.all.page(params[:page]).per(10)
@@ -20,6 +22,7 @@ class ProductsController < ApplicationController
       flash[:success] = "商品を登録しました"
       redirect_to products_path
     else
+      flash[:danger] = '商品を登録できませんでした'
       render :new
     end
   end
@@ -43,6 +46,12 @@ class ProductsController < ApplicationController
       end
   end
 
+  def destroy
+    Product.find(params[:id]).destroy
+    flash[:success] = "商品を削除しました"
+    redirect_to products_path
+  end
+
   def ensure_correct_user
     if current_user.admin?
     else
@@ -51,15 +60,17 @@ class ProductsController < ApplicationController
     end
   end
 
-  def destroy
-    Product.find(params[:id]).destroy
-    flash[:success] = "商品を削除しました"
-    redirect_to products_path
-  end
-
   private
 
   def product_params
     params.require(:product).permit(:name,:price,:picture)
   end
+
+  def exist_product?
+    unless Product.find_by(id: params[:id])
+      flash[:danger] = '商品が存在しません'
+      redirect_to products_path
+    end
+  end
+
 end
