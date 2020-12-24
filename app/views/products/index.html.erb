@@ -22,7 +22,7 @@
        <td><%= product.price %>円</td>
        <% if current_user.admin? %>
           <td><%= link_to "編集", edit_product_path(product),class: 'btn btn-xs btn-primary' %></td>
-          <td><%= link_to "削除", product_path(product.id), method: :delete, class: 'btn btn-xs btn-danger', data: { confirm: '商品を削除してよろしいですか？'}%></td>
+          <td><%= link_to "削除", product, method: :delete, class: 'btn btn-xs btn-danger', data: { confirm: '商品を削除してよろしいですか？'}%></td>
        <% end %>
      </tr>
    <% end %>

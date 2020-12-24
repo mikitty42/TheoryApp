@@ -1,5 +1,5 @@
 class ProductsController < ApplicationController
-  before_action :ensure_correct_user, { only: [:new,:create,:edit,:destroy]}
+  before_action :ensure_correct_user,  only: [:new,:create,:edit,:destroy]
   before_action :not_logged_in
   before_action :exist_product?, only: [:show, :edit, :update]
 
@@ -42,6 +42,7 @@ class ProductsController < ApplicationController
         flash[:success] = "更新しました"
         redirect_to @product
       else
+        flash[:danger] = "更新出来ませんでした"
         render :edit
       end
   end

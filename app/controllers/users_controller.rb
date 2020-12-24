@@ -24,6 +24,7 @@ class UsersController < ApplicationController
       @user.create_cart
       redirect_to @user
     else
+      flash[:daner] = 'ユーザー登録に失敗しました'
       render :new
     end
   end
@@ -38,12 +39,13 @@ class UsersController < ApplicationController
       flash[:success] = 'Profileを更新しました'
       redirect_to @user
     else
+      flash[:danger] = 'Profileを更新できませんでした'
       render :edit
     end
   end
 
   def destroy
-    User.find(params[:id]).destroy
+    User.find(params[:id]).destroy!
     flash[:success] = "ユーザーを削除しました"
     redirect_to users_url
   end
