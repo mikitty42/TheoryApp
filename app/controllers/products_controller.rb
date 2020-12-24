@@ -22,7 +22,7 @@ class ProductsController < ApplicationController
       flash[:success] = "商品を登録しました"
       redirect_to products_path
     else
-      flash[:notice] = "商品を登録できませんでした"
+      #flash[:notice] = "商品を登録できませんでした"
       render :new
     end
   end
@@ -42,7 +42,7 @@ class ProductsController < ApplicationController
         flash[:success] = "更新しました"
         redirect_to @product
       else
-        flash[:notice] = "更新出来ませんでした"
+        #flash[:notice] = "更新出来ませんでした"
         render :edit
       end
   end
