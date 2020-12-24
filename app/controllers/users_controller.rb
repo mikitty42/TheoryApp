@@ -24,7 +24,7 @@ class UsersController < ApplicationController
       @user.create_cart
       redirect_to @user
     else
-      flash[:daner] = 'ユーザー登録に失敗しました'
+      flash[:notice] = 'ユーザー登録に失敗しました'
       render :new
     end
   end
@@ -39,7 +39,7 @@ class UsersController < ApplicationController
       flash[:success] = 'Profileを更新しました'
       redirect_to @user
     else
-      flash[:danger] = 'Profileを更新できませんでした'
+      flash[:nnotice] = 'Profileを更新できませんでした'
       render :edit
     end
   end
@@ -61,7 +61,7 @@ class UsersController < ApplicationController
   def logged_in_user
     unless logged_in?
       store_location
-      flash[:danger] = 'ログインしてください'
+      flash[:notice] = 'ログインしてください'
       redirect_to sessions/new
     end
   end
@@ -77,7 +77,7 @@ class UsersController < ApplicationController
 
   def exist_user?
     unless User.find_by(id: params[:id])
-      flash[:danger] = "ユーザーが存在しません"
+      flash[:notice] = "ユーザーが存在しません"
       redirect_to users_path
     end
   end
