@@ -17,7 +17,7 @@ Ruby 2.5.6 Rails 5.2.4
 ## 機能一覧
 
 
-* ビデオ通話機能
+* ビデオ通話機能(メッセージでURLを送る形式)
 * メッセージ機能
 * ログイン機能
 * ユーザー登録、編集機能、管理者機能
@@ -93,7 +93,7 @@ Catalog design,Table_Definition,Screen transition diagram,,Wire frame
 * Favorite function
 * Fuzzy search function
 * Advanced cart features
-* Video call function
+* Video call function(enter URL in video)
 * Message function
 
 ## To be used Gem
