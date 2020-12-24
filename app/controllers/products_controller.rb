@@ -22,8 +22,7 @@ class ProductsController < ApplicationController
       flash[:success] = "商品を登録しました"
       redirect_to products_path
     else
-      flash[:danger] = '商品を登録できませんでした'
-      render :new
+      render :new,notice: "商品を登録できませんでしt"
     end
   end
 
