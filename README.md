@@ -4,7 +4,7 @@ TheoryApp
 
 ## 概要
 
-ファッションブランドTheoryのアプリ。ECサイト機能にビデオ通話機能(メッセージでURLを送る形式)、チャット機能を追加しました。
+ファッションブランドTheoryのアプリ。ECサイト機能にメッセージ機能を追加しました。また、メッセージ欄にURLを送る事でお客様と直接やり取りする(ビデオ通話機能みたいなもの)事ができます。
 
 ## コンセプト
 
@@ -16,9 +16,7 @@ Ruby 2.5.6 Rails 5.2.4
 
 ## 機能一覧
 
-
-* ビデオ通話機能(メッセージでURLを送る形式)
-* メッセージ機能
+* メッセージ機能(メッセージでURLを送るとビデオ通話ができるようになります)
 * ログイン機能
 * ユーザー登録、編集機能、管理者機能
     * メールアドレス、名前、パスワードは必須
@@ -93,8 +91,7 @@ Catalog design,Table_Definition,Screen transition diagram,,Wire frame
 * Favorite function
 * Fuzzy search function
 * Advanced cart features
-* Video call function(enter URL in video)
-* Message function
+* Message function (You can make a video call by sending the URL in the message)
 
 ## To be used Gem
 
