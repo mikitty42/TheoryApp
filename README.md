@@ -95,6 +95,8 @@ Catalog design,Table_Definition,Screen transition diagram,,Wire frame
 * Fuzzy search function
 * Advanced cart features
 * Message function (You can make a video call by sending the URL in the message)
+    * Select the person you want to make a video call with and paste the google meet URL in the message field. Click the pasted link to make a video call. Below google meet usage requirements
+    <https://support.google.com/meet/answer/7317473?hl=ja>
 
 ## To be used Gem
 
