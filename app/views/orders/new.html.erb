@@ -1,0 +1,18 @@
+<h2>注文情報の入力</h2>
+
+<div class='order_form'>
+  <%= form_for(@order) do |f| %>
+  <div class='field'>
+    <%= f.label :氏名 %>
+    <%= f.text_field :name,size: 40 %>
+  </div>
+
+  <div class='field'>
+    <%= f.label :住所 %>
+    <%= f.text_area :address,rows: 3,cols: 40 %>
+  </div>
+
+  <%= f.submit '注文を確定する',class: 'btn btn-primary',data: {confirm: '注文してよろしいですか?'} %>
+</div>
+<% end %>
+<%= link_to '買い物を続ける',products_path,class: 'btn' %>

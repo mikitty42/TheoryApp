@@ -1,0 +1,48 @@
+<h2>全ユーザーの注文履歴</h2>
+
+<% if @all_orders.blank? %>
+  <h2>注文履歴はありません</h2>
+<% else %>
+
+<table class='table table-striped'>
+  <thead>
+    <tr>
+      <th>注文日</th>
+      <th>氏名</th>
+      <th>住所</th>
+      <th>メールアドレス</th>
+      <th>注文内容</th>
+      <th>合計金額</th>
+      <th>注文ステータス</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <% @all_orders.eacch do |order| %>
+        <% total_price = 0 %>
+        <td><%= order.created_at.strftime('%Y/%m/%d') %></td>
+        <td><%= order.name %></td>
+        <td><%= order.address %></td>
+        <td>
+        <% order.order_paroducts.each do |order_product| %>
+        [商品名:<%= Product.where(id:order_product.product_id).name %>]
+           [商品価格:<%= order_product.price %>円]
+           [購入個数:<%= order_product.quantity %>個]
+           <br>
+         <% end %>
+        </td>
+
+        <td>
+          <% order.order_products.each do |order_product| %>
+           <% order_product.price %>
+           <% order_product.quantity %>
+           <% total_prict += order_product.price * order_product.quantity %>
+         <% end %>
+         <%= total_price %>円
+        </td>
+        <td><%= link_to order.status,order_toggle_status_path(order),method: :patch,data: {confirm: 'ステータスを変更してよろしいですか？'} %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
+<% end %>
