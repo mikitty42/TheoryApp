@@ -2,6 +2,7 @@ class FavoritesController < ApplicationController
 
   def index
     @favorites = current_user.favorite_products.page(params[:page]).per(10)
+    @products = current_user.favorite_products.page(params[:page]).per(10)
   end
 
   def create

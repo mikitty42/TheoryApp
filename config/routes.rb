@@ -12,6 +12,9 @@ Rails.application.routes.draw do
   resources :conversations do
     resources :messages
   end
+  resources :orders do
+    patch :toggle_status
+  end
   get  "samples/index"  => "samples#index"
   get 'rooms/show'
   root 'rooms#show'

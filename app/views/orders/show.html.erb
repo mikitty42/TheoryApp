@@ -1,0 +1,45 @@
+<h2>あなたの注文履歴です</h2>
+
+<% if @order_products.blank? %>
+  <h2>注文履歴はありません</h2>
+<% else %>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>注文日</th>
+      <th>注文内容</th>
+      <th>合計金額</th>
+      <th>注文ステータス</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <% current_user_order.each do |order| %>
+        <% total_price = 0 %>
+        <td><%= order.created_at.strftime('%Y/%m/%d') %></td>
+
+        <td><!--注文内容-->
+        <% order.order_products.each do |order_product| %>
+          [商品名:<%= Product.find(order_product.product_id).name %>]
+          [商品価格:<%= order_product.price %>円]
+          [購入個数:<%= order_product.quantity %>個]
+          <br>
+        <% end %>
+        </td>
+
+        <td><!--合計金額-->
+        <% order.order_products.each do |order_product| %>
+          <% order_product.price %>
+          <% order_product.quantity %>
+          <% total_price += order_product.price*order_product.quantity %>
+        <% end %>
+        <%= total_price %>円
+        </td>
+      <td><%= order.status %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<% end %>

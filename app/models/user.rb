@@ -1,6 +1,7 @@
 class User < ApplicationRecord
   has_one :cart
   has_many :products
+  has_many :orders
   has_many :favorites
   has_many :favorite_products, through: :favorites, source: :product
   has_many :messages,dependent: :destroy
